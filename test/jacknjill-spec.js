@@ -30,21 +30,21 @@ it('verifies the arrayCompare', function() {
 // example 3: input = ['bob', 'jack', 'jill', 'jack', 'amanda'], output ['jack', 'jack', 'jill', 'bob', 'amanda']
 
 
-xit('passes the first test case', function() {
+it('passes the first test case', function() {
   arrayCompare(
     jacknjill(['bob', 'jill', 'jack', 'amanda']),
               ['jack', 'jill', 'bob', 'amanda'])
               .should.equal(true);
 });
 
-xit('passes the second test case', function() {
+it('passes the second test case', function() {
   arrayCompare(
     jacknjill(['bob', 'jill', 'amanda']),
               ['jill', 'bob', 'amanda'])
               .should.equal(true);
 });
 
-xit('passes the third test case', function() {
+it('passes the third test case', function() {
   arrayCompare(
     jacknjill(['bob', 'jack', 'jill', 'jack', 'amanda']),
               ['jack', 'jack', 'jill', 'bob', 'amanda'])

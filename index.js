@@ -18,10 +18,24 @@
 var jacknjill = function(array) {
   //make a copy of the array so that we aren't messing with the original
   var workspace = array.slice();
-  
+  var stub = []; //for jack n jill
+  var remains = []; //for everything else
+  while (workspace.length != 0) {
+    var el = workspace.shift();
+    if ((el === 'jack') || (el === 'jill')) {
+      stub.unshift(el);
+    } else {
+      remains.push(el);
+    }
+  }
+  //since lexographical order is the default, we don't need a comparison operator
+  var result = stub.sort().concat(remains);
+  console.log(array, result);
+  return result;
 
+};
 
-}
+module.exports.jacknjill = jacknjill;
 
 
 
