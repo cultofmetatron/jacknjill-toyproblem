@@ -17,7 +17,10 @@
 
 var jacknjill = function(array) {
   //make a copy of the array so that we aren't messing with the original
-  var workspace = array.slice(); 
+  var workspace = array.slice();
+  
+
+
 }
 
 
