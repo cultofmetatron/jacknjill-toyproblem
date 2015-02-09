@@ -1,0 +1,16 @@
+{
+  "name": "jackjill",
+  "version": "1.0.0",
+  "description": "a test question thingy",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.1.0",
+    "mocha": "^2.1.0",
+    "should": "^4.6.5"
+  }
+}
